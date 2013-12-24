@@ -78,7 +78,7 @@ static void insertNode(TreeNode * tree)
  */
 void buildSymTab(TreeNode * syntaxTree)
 {	traverse(syntaxTree,insertNode,nullProc);
-	fprintf(listing,"\nSymbol table:\n\n");
+	fprintf(listing,"\nSymbol table:\n");
 	printSymTab(listing);
 }
 /* 类型错误时的处理函数。 */
