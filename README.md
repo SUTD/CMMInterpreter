@@ -18,7 +18,42 @@ and standard I/O:
 * write(var)
 
 You don't need to write **main** function, actually it doesn't support function. It also supports comments, both /*comment*/ and //comment .
-You can use **-t** to let the interpreter print the **syntax tree**, but you may put the sign at the last position of line like this: **./interpreter test2.cmm -s**
+You can use **-t** to let the interpreter print the **syntax tree**, but you may only put the sign at the last position of line like this: **./interpreter test2.cmm -s**
+
+Syntax tree:
+  Declaration:
+    Type: int
+    Id: a
+  Assign to: a
+    Int value: 6
+  Declaration:
+    Type: real
+    Id: factor
+  Assign to: factor
+    Int value: 1
+  WhileLoop:
+    Op: <>
+      Id: a
+      Int value: 0
+    CompStmt:
+      Assign to: factor
+        Op: *
+          Id: factor
+          Id: a
+      Assign to: a
+        Op: -
+          Id: a
+          Int value: 1
+  Write:
+    Id: factor
+
+Symbol table:
+	/-----------------------------------\
+	|  VarName    Type IsArray DeclLine |
+	|------------ ---- ------- ---------|
+	|  factor     Real    0      7      |
+	|  a          Int     0      4      |
+	\-----------------------------------/
 
 That's all.  Have fun. ;-D
 
