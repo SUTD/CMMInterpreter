@@ -4,6 +4,10 @@ C Minus Minus, or C--, is a subset of C programming language.
 
 Here is an interpreter for CMM, run in command line. It's written in C, based on GNU Flex &amp; Bison, which can be easily installed in Linux. You would already have them if you've installed Xcode on your mac.
 
+Work flow:
+
+![alt tag](https://raw.github.com/hukun01/CMMInterpreter/master/Work%20flow.png)
+
 It supports following types:
 * int
 * real(float)
