@@ -11,6 +11,7 @@ It supports following types:
 and standard I/O:
 * read(var)
 * write(var)
-That's all.
+
+That's all. And you don't need to write **main** function, actually it doesn't support function ;-D
 
 Notice: It does not support variable definition with declaration, which means you have to do this: **int var; var = 3;** instead of **int var = 3;**
