@@ -20,39 +20,39 @@ and standard I/O:
 You don't need to write **main** function, actually it doesn't support function. It also supports comments, both /*comment*/ and //comment .
 You can use **-t** to let the interpreter print the **syntax tree**, but you may only put the sign at the last position of line like this: **./interpreter test2.cmm -s**
 
-Syntax tree:
+Syntax tree:<br>
 &nbsp;Declaration:<br>
-&nbsp;&nbsp;Type: int
-&nbsp;&nbsp;Id: a
-&nbsp;Assign to: a
-&nbsp;&nbsp;Int value: 6
-&nbsp;Declaration:
-&nbsp;&nbsp;Type: real
-&nbsp;&nbsp;Id: factor
-&nbsp;Assign to: factor
-&nbsp;&nbsp;Int value: 1
-&nbsp;WhileLoop:
-&nbsp;&nbsp;Op: <>
-&nbsp;&nbsp;Id: a
-&nbsp;&nbsp;Int value: 0
-&nbsp;&nbsp;CompStmt:
-&nbsp;&nbsp;&nbsp;Assign to: factor
-&nbsp;&nbsp;&nbsp;Op: *
-&nbsp;&nbsp;&nbsp;&nbsp;Id: factor
-&nbsp;&nbsp;&nbsp;&nbsp;Id: a
-&nbsp;&nbsp;Assign to: a
-&nbsp;&nbsp;&nbsp;Op: -
-&nbsp;&nbsp;&nbsp;&nbsp;Id: a
-&nbsp;&nbsp;&nbsp;&nbsp;Int value: 1
-&nbsp;Write:
+&nbsp;&nbsp;Type: int<br>
+&nbsp;&nbsp;Id: a<br>
+&nbsp;Assign to: a<br>
+&nbsp;&nbsp;Int value: 6<br>
+&nbsp;Declaration:<br>
+&nbsp;&nbsp;Type: real<br>
+&nbsp;&nbsp;Id: factor<br>
+&nbsp;Assign to: factor<br>
+&nbsp;&nbsp;Int value: 1<br>
+&nbsp;WhileLoop:<br>
+&nbsp;&nbsp;Op: <><br>
+&nbsp;&nbsp;Id: a<br>
+&nbsp;&nbsp;Int value: 0<br>
+&nbsp;&nbsp;CompStmt:<br>
+&nbsp;&nbsp;&nbsp;Assign to: factor<br>
+&nbsp;&nbsp;&nbsp;Op: *<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Id: factor<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Id: a<br>
+&nbsp;&nbsp;Assign to: a<br>
+&nbsp;&nbsp;&nbsp;Op: -<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Id: a<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Int value: 1<br>
+&nbsp;Write:<br>
 &nbsp;&nbsp;Id: factor
 
 Symbol table:
-	+-----------------------------------+
-	|  VarName   |Type|IsArray|DeclLine |
-	|------------+----+-------+---------|
-	|  factor    |Real|   0   |    7    |
-	|  a         |Int |   0   |    4    |
+	+-----------------------------------+<br>
+	|  VarName   |Type|IsArray|DeclLine |<br>
+	|------------+----+-------+---------|<br>
+	|  factor    |Real|   0   |    7    |<br>
+	|  a         |Int |   0   |    4    |<br>
 	+-----------------------------------+
 
 That's all.  Have fun. ;-D
