@@ -7,7 +7,8 @@ It supports following types:
 * int
 * real(float)
 * bool
-And standard I/O:
+
+and standard I/O:
 * read(var)
 * write(var)
 That's all.
