@@ -17,7 +17,7 @@ and standard I/O:
 * write(var)
 
 You don't need to write **main** function, actually it doesn't support function. It also supports comments, both /*comment*/ and //comment .
-You can use **-t** to let the interpreter print the **syntax tree**, but you may put the sign at the last position of line like this: ./interpreter test2.cmm -s
+You can use **-t** to let the interpreter print the **syntax tree**, but you may put the sign at the last position of line like this: **./interpreter test2.cmm -s**
 
 That's all.  Have fun. ;-D
 
