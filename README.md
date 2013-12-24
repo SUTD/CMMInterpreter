@@ -21,7 +21,7 @@ You don't need to write **main** function, actually it doesn't support function.
 You can use **-t** to let the interpreter print the **syntax tree**, but you may only put the sign at the last position of line like this: **./interpreter test2.cmm -s**
 
 Syntax tree:
-&nbsp;Declaration:
+&nbsp;Declaration:<br>
 &nbsp;&nbsp;Type: int
 &nbsp;&nbsp;Id: a
 &nbsp;Assign to: a
