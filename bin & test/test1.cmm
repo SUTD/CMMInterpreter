@@ -1,0 +1,42 @@
+/*	与所有测试有关的一些话：
+*
+*	在测试方面有一个与可能与系统有关的bug，我用助教给的测试文件进行测试会出错，
+*	但是自己在ubuntu下新建一个文件，写的同样内容的测试代码却没有问题，
+*	我猜测是因为字符编码不同造成的，然而全部转为了UTF－8后还是不行，
+*	我对字符编码不是很了解，所以没有解决这个问题。
+*	可以确定的一点是，linux下的许多符号与windows不同，会根据输入法不同而不同，比如＊和*，／和/，
+*	前者是在中文输入法下的星号和斜杠，后者是在英文输入法下的星号和斜杠，当然，只有英文的符号才能被正确识别。
+*	后来我发现在linux下创建的文件，其格式都不是DOS格式，而在windows下的许多文件都是DOS格式，可能是由于这个原因造成的。
+*/
+
+/*	测试文件说明：
+*	主题：这是阶乘测试。
+*	内容：包含变量声明与赋值；
+*		 强制类型转换；
+*		 while循环；
+*		 write语句的测试。
+*/
+int a;	//	根据CMM的文法，变量不可以初始化，必须先声明，后赋值。
+a= 6;
+//write(undecl);	//	报错：未声明就使用的变量
+real factor;
+factor = 1;	//	警告：将整型数值赋给浮点型变量，类型不匹配
+while( a <> 0 )
+{
+	factor = factor * a;	//	警告：并进行强制类型转换，将右边的表达式的值的类型转为与赋值符左边变量相同的类型
+	a = a -1;
+}
+write( factor );
+
+/*output1:	//若注释了第18行，则输出如下
+Warn:Type conflict at line 20: Variable and right value are not the same type.
+Warn:Type conflict at line 23: Op applied to numbers which aren't the same type.
+Warn:Type conflict at line 23: Variable and right value are not the same type.
+720.0000
+*///:~
+
+/*output2:	//若没有注释了第18行，则输出如下
+Error:line 18:Variable undecl has not been declared.
+Result:Some errors occurred in symbol table construction.
+//表示在类型检查阶段出现错误，因此不能解释执行。
+*///:~ 
