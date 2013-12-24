@@ -70,7 +70,7 @@ main( int argc, char * argv[] )
 			{	fprintf(listing,"Executing....\n");
 				execTree(syntaxTree);
 				if(! Error)
-					fprintf(listing,"\n\nResult:Execution Successful.\n");
+					fprintf(listing,"\n\nResult:Execution Succeeded.\n");
 				else
 					fprintf(listing,"\n\nResult:Some errors occurred in Execution.\n");
 			}

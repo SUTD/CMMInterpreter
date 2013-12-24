@@ -2,23 +2,25 @@
  * Test control flow and its nests
  */
 
-int myArr[3];
+int myArr[5];
 myArr[0]=2;
 myArr[1]=3;
 myArr[2]=0;
+myArr[3]=4;
+myArr[4]=1;
 int count;
 count = 0;
 // Output unsorted array
-while(count < 3) {
+while(count < 5) {
 	write(myArr[count]);
 	count = count+1;
 }
 // Bubble sort array
 int count2;
 count = 0;
-while (count < 2) {
+while (count < 4) {
 	count2 = 0;
-	while (count2 < (2 - count)) {
+	while (count2 < (4 - count)) {
 		if (myArr[count2] > myArr[count2+1]) {
 			int tmp;
 			tmp = myArr[count2];
@@ -31,7 +33,7 @@ while (count < 2) {
 }
 count = 0;
 // Output sorted array
-while(count < 3) {
+while(count < 5) {
 	write(myArr[count]);
 	count = count+1;
 }
