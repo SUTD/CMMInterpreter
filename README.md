@@ -22,7 +22,7 @@ You can use **-t** to let the interpreter print the **syntax tree**, but you may
 
 Syntax tree:![alt tag](https://raw.github.com/hukun01/CMMInterpreter/master/syntax%20Tree%20of%20test1.png)
 
-Symbol table:![alt tag](https://raw.github.com/hukun01/CMMInterpreter/master/syntax%20Tree%20of%20test1.png)
+Symbol table:![alt tag](https://raw.github.com/hukun01/CMMInterpreter/master/symbol%20Table%20of%20test1.png)
 
 That's all.  Have fun. ;-D
 
