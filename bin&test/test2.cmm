@@ -1,9 +1,6 @@
-/*	测试文件说明：
-*	主题：控制流语句及其嵌套的测试
-*	内容：测试while，if和if-else控制流语句；
-*		 while嵌套while，while嵌套if，if嵌套if等混合嵌套的测试；
-*		 控制流的条件判断后可跟单条语句或者复合语句块。
-*/
+/*	
+ * Test control flow and its nests
+ */
 int a;
 a = 4;
 while(a <> 0)

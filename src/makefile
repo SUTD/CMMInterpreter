@@ -2,7 +2,7 @@
 CC = gcc
 FLAG = -w
 interpreter: main.o util.o cmm.tab.o cmm.lex.o symtab.o analyze.o
-	$(CC) $(FLAG) -o interpreter main.o util.o cmm.tab.o cmm.lex.o symtab.o analyze.o
+	$(CC) $(FLAG) -o ../bin\&test/interpreter main.o util.o cmm.tab.o cmm.lex.o symtab.o analyze.o
 main.o: main.c parse.h analyze.h
 	$(CC) $(FLAG) -c main.c
 cmm.tab.o:cmm.tab.c parse.h
